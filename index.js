@@ -23,9 +23,9 @@ app.use(express.static(__dirname + "/public"));
 
 
 
-app.use('/',routes);
-app.use('/about',about);
-app.use('/hobbies',hobbies);
+app.use(routes);
+app.use(about);
+app.use(hobbies);
 
 
 
