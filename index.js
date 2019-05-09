@@ -24,14 +24,9 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.use(routes);
-<<<<<<< HEAD
 //app.use(about.router);
 //app.use(hobbies.router);
 
-=======
-app.use(about);
-app.use(hobbies);
->>>>>>> e0df53124e9f20d6b4fff37e429da9149099a303
 
 
 

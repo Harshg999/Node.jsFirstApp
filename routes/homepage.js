@@ -3,15 +3,13 @@ var router= express.Router();
 
 //GET homepage
 
-router.get('/:page',function(req ,res,next){
-    if(req.params.page==""){
-        res.render("homepage");
-    }
-    else{
-        next();
-    }
-    
-},function(req,res,next){
+router .get('/',function(req,res)
+{
+    res.render("homepage");
+});
+
+// GET about and hobbies pages
+router.get('/:page',function(req,res,next){
     if(req.params.page=="about"){
         res.render("about");
     }
