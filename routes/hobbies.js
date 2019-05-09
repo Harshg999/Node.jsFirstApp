@@ -1,4 +1,4 @@
-var express= require('express');
+/* var express= require('express');
 var router= express.Router();
 
 //GET hobbies page
@@ -6,4 +6,4 @@ var router= express.Router();
 router.get("/hobbies",function(req,res,next){
     res.render("hobbies");
 });
-module.exports=router;
+module.exports=router; */

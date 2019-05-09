@@ -4,8 +4,8 @@ var path = require('path');
 
 // Routes
 var routes = require('./routes/homepage');
-var about = require('./routes/about');
-var hobbies = require('./routes/hobbies');
+//var about = require('./routes/about');
+//var hobbies = require('./routes/hobbies');
 
 var app = express();
 
@@ -23,9 +23,10 @@ app.use(express.static(__dirname + "/public"));
 
 
 
-app.use('/',routes);
-app.use('/about',about);
-app.use('/hobbies',hobbies);
+app.use(routes);
+//app.use(about.router);
+//app.use(hobbies.router);
+
 
 
 
